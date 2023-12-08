@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Poppins', sans-serif; */
+
+.navbar{
+    font-family:'Poppins', sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+    text-transform: uppercase; 
+    box-shadow: 0 8px 6px -6px #ddacf5;
+    --webkit-box-shadow:0 8px 6px -6px #ddacf5;
+    border-bottom: 0px solid #ddacf5 !important;
+}
+
+
+.nav-link{
+    font-weight: 300 !important;
+    color: #c7417b!important;
+}
+
+.active{
+    border-bottom:2.5px solid #27104e;
+}
+
+.navbar-brand{
+    font-weight: 700;
+    font-family: "roboto ",sans-serif;
+    letter-spacing: 3px;
+    color: #f5487f !important;
+   
+
+}
+
+.icon{
+    margin-right: 4%;
+    color: #27104e;
+    
+}
+
+
+/* =====================================
+================Footer================== */
+
+
+.footer{
+    color: #fff;
+    padding: 25px;
+    background: #c7417b;
+    background: -webkit-linear-gradient(to right, #c7417b, #8f3b76);
+    background: linear-gradient(to right , #c7417b, #8f3b76);
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    font-weight: 500;
+
+}
+
+.footer a:hover{
+    color: #1f306e;
+    border-bottom:1px solid  #1f306e;
+    font-weight: 500;
+
+
+}
+
+
+/* ======================================
+===========Page Not Found================ */
+
+.pnf{
+    display: flex;
+    min-height: 65vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.pnf-title{
+    font-size: 100px;
+    font-weight: 700;
+}
+
+
+.pnf-heading{
+    font-weight: normal;
+
+}
+
+
+.pnf-btn{
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+/* ==============contact us ======= */
+
+.cicon {
+    color:#c7417b;
+    
+  }
+
+
+  /* =================about us page =========== */
+.about-us-container {
+    display: flex;
+   
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-us-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .about-us-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .about-us-text {
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+  }
+  
+  .about-us-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .about-us-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+
+
+
+  .product-link{
+    text-decoration: none !important;
+    color: #000;
+
+  }
+
+  /* checkbox  */
+ /* CSS */
+.custom-checkbox {
+  display: flex;
+  align-items: center; 
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: relative;
+  display: inline-block; /* Changed to inline-block */
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 10px; /* Added margin to separate checkbox and label */
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 6px;
+  top: 7px; /* Adjusted top position */
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  background-color: #007bff;
+}
+
+
+
+
+
+
+/* Contact Page Styles */
+
+.contact-page {
+  padding: 20px;
+}
+
+.contact-header {
+  background-color: #333;
+}
+
+.contact-header h1 {
+  padding: 20px;
+}
+
+.contact-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info {
+  padding: 20px;
+  background: linear-gradient(to right, #f1f1f1, #ffffff);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-item {
+  margin-bottom: 20px;
+}
+
+.cicon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
