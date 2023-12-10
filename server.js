@@ -7,13 +7,16 @@ import cors from 'cors'
 import categoryRoutes from './routes/categoryRoutes.js'
 import productRoutes from "./routes/productRoutes.js";
 const app = express();
+import {fileURLToPath} from 'url'
+import { path } from 'express/lib/application.js';
 // Configure environment variables
 dotenv.config();
 
 // Connect to the database
 connectDB();
 
-
+const __filenmae=fileURLToPath(import.meta.url);
+const __dirname=path.dirname(__filenmae);
 
 // Middleware
 app.use(cors());
