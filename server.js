@@ -8,7 +8,6 @@ import categoryRoutes from './routes/categoryRoutes.js'
 import productRoutes from "./routes/productRoutes.js";
 const app = express();
 import {fileURLToPath} from 'url'
-import { path } from 'express/lib/application.js';
 // Configure environment variables
 dotenv.config();
 
@@ -30,7 +29,7 @@ app.use('/api/v1/product',productRoutes)
 
 // rest api
 app.use('*',function(req,res){
-    res.sendFile(__dirname,'./client/build/index.html')
+    res.sendFile(path.join(__dirname,'./client/build/index.html'))
 })
 
 const PORT = process.env.PORT || 8080;
